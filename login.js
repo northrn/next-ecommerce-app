@@ -7,7 +7,7 @@ import { LockClosedIcon } from '@heroicons/react/solid'
 export default function Login() {
 
     const [email, setEmail] = useState("")
-    const loginUser = useContext(AuthContext)
+    const {loginUser} = useContext(AuthContext)
 
     const handleSubmit = (event) => {
         event.preventDefault();
