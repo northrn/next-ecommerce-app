@@ -34,13 +34,13 @@ export const AuthProvider = (props) => {
 
     useEffect(() => {
         magic = new Magic(MAGIC_PUBLIC_KEY)
+         }, [])
 
     return (
         <AuthContext.Provider value={{ user, loginUser, logoutUser }}>
             {props.children}
         </AuthContext.Provider>
     )
-    }, [])
 }
 
 
